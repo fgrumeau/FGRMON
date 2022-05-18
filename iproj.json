@@ -1,0 +1,20 @@
+{
+    "description": "FGR - Merlin on Monza",
+    "version": "0.0.1",
+    "includePath": [
+        "FGRMON_SRC/QPROTOSRC"
+    ],
+    "repository": "git@github.com:fgrumeau/FGRMON.git",
+    "objlib": "&verlibfgrmon",
+    "curlib": "*CRTDFT",
+    "extensions": {
+        "arcad": {
+            "code": "FGRMON",
+            "libraryPrefix": "FGR",
+            "iasp": "*SYSBAS",
+            "validated": true
+        }
+    },
+    "buildCommand": "elias compile {branch}",
+    "compileCommand": "elias compile {branch} -f {filename}"
+}
